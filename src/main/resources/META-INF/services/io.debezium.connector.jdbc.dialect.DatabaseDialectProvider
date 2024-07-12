@@ -3,4 +3,5 @@ io.debezium.connector.jdbc.dialect.mysql.MariaDbDatabaseDialect$MariaDbDatabaseD
 io.debezium.connector.jdbc.dialect.mysql.MySqlDatabaseDialect$MySqlDatabaseDialectProvider
 io.debezium.connector.jdbc.dialect.oracle.OracleDatabaseDialect$OracleDatabaseDialectProvider
 io.debezium.connector.jdbc.dialect.postgres.PostgresDatabaseDialect$PostgresDatabaseDialectProvider
+io.debezium.connector.jdbc.dialect.snowflake.SnowflakeDatabaseDialect$SnowflakeDatabaseDialectProvider
 io.debezium.connector.jdbc.dialect.sqlserver.SqlServerDatabaseDialect$SqlServerDatabaseDialectProvider
