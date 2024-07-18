@@ -2,7 +2,7 @@ package io.debezium.connector.jdbc.dialect.snowflake;
 
 import org.hibernate.dialect.DatabaseVersion;
 
-public class SnowflakeHibernateDialect extends org.hibernate.dialect.Dialect {
+public class SnowflakeHibernateDialect extends org.hibernate.dialect.PostgreSQLDialect {
     @Override
     public DatabaseVersion getVersion() {
         return new DatabaseVersion() {
