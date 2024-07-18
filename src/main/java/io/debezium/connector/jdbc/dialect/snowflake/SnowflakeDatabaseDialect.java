@@ -6,7 +6,6 @@ import java.time.temporal.TemporalAccessor;
 import java.util.Optional;
 
 import org.hibernate.SessionFactory;
-import org.hibernate.dialect.DerbyDialect;
 import org.hibernate.dialect.Dialect;
 
 import io.debezium.connector.jdbc.JdbcSinkConnectorConfig;
@@ -22,7 +21,7 @@ public class SnowflakeDatabaseDialect extends GeneralDatabaseDialect {
     public static class SnowflakeDatabaseDialectProvider implements DatabaseDialectProvider {
         @Override
         public boolean supports(Dialect dialect) {
-            return dialect instanceof DerbyDialect; // TODO: double-check. Suggested here: https://www.cdata.com/kb/tech/snowflake-jdbc-hibernate.rst
+            return dialect instanceof SnowflakeHibernateDialect;
         }
 
         @Override
